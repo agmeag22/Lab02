@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meag.a00002816lab02.MainActivity">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miguel"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nombre"
+        android:layout_marginLeft="10dp"
+        android:text="Avilés"
+        android:textSize="25sp"
+        android:id="@+id/Apellido" />
+
+    <TextView
+        android:id="@+id/Ing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nombre"
+        android:layout_below="@+id/nombre"
+        android:text="Ing."
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/button_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Ing"
+        android:layout_below="@+id/Ing"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/button_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_guardar"
+        android:layout_alignBottom="@+id/button_guardar"
+        android:layout_toEndOf="@+id/button_guardar"
+        android:text="Cancelar" />
+</RelativeLayout>
+
